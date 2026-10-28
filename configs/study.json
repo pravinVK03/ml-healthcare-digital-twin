@@ -1,0 +1,27 @@
+{
+  "study_name": "MIMIC IV Demo Type 2 Diabetes Patient State Study",
+  "data_dir": "mimic-iv-clinical-database-demo-1.0",
+  "output_dir": "results",
+  "random_seed": 20261026,
+  "n_folds": 5,
+  "bootstrap_iterations": 2000,
+  "min_glucose_mg_dl": 20.0,
+  "max_glucose_mg_dl": 1000.0,
+  "history_window_hours": 48.0,
+  "minimum_history_measurements": 2,
+  "minimum_outcome_gap_hours": 1.0,
+  "maximum_outcome_gap_hours": 24.0,
+  "adaptive_state_half_life_hours": 12.0,
+  "hba1c_minimum_gap_days": 30.0,
+  "hba1c_maximum_gap_days": 730.0,
+  "hba1c_minimum_subjects_for_primary_study": 50,
+  "glucose_lab_itemids": [50809, 50931, 52027, 52569],
+  "hba1c_lab_itemids": [50852, 50854, 51631],
+  "models": [
+    "persistence",
+    "snapshot_ridge",
+    "history_ridge",
+    "adaptive_ridge",
+    "adaptive_hgb"
+  ]
+}

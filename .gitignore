@@ -1,0 +1,14 @@
+.python_packages/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+outputs/
+*.egg-info/
+
+# Local research data and generated run artifacts
+mimic-iv-clinical-database-demo-1.0/
+results/
+.report_work/
+.proposal_render/
+
